@@ -1,19 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body{
-    font-family: 'Roboto', cursive;
-    background-color: aqua;
+    font-family: "Bebas Neue", sans-serif;
+    background-color: lightcyan;
     background-size: 1400px;
 }
 
-h1{
-    color: blueviolet;
-    font-size: larger;
-    
+.linea{
+    background: violet;
+    height: 5px;
+    width: 100%;
+    display: block;
+
+}
+
+.titulo {
+    color: black;
+    font-size: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .card{
-    border-radius: 40PX;
-    border-color: antiquewhite;
-    
+    width: 400px;
+    height: 400px;
+    border-radius: 20PX;
+    border-color: black;
+}
+
+.card-img-top{
+    height: 200px;
+    width: 240;
+}
+
+.galeria > a{
+    display: block;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 6px rgb(0, 0, .5);
+}
+
+.galeria img{
+    width: 100%;
+    vertical-align: top;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s;
+
+}
+
+.galeria a:hover img{
+    filter: blur(2px);
+    transform: rotate(10deg) scale(1.3);
 }
